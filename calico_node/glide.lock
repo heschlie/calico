@@ -1,5 +1,5 @@
 hash: 311786e8e41072559f14d4800a555f4de93033caad9aa5f828bb9d29ec72d97a
-updated: 2017-11-30T16:24:01.204103766-08:00
+updated: 2017-12-15T15:29:10.192368972-08:00
 imports:
 - name: cloud.google.com/go
   version: 3b1ae45394a234c385be014e9a488f2bb6eef821
@@ -7,10 +7,11 @@ imports:
   - compute/metadata
   - internal
 - name: github.com/coreos/etcd
-  version: 17ae440991da3bdb2df4309936dd2074f66ec394
+  version: 1e1dbb23924672c6cd72c62ee0db2b45f778da71
   subpackages:
   - client
   - pkg/pathutil
+  - pkg/srv
   - pkg/tlsutil
   - pkg/transport
   - pkg/types
@@ -24,7 +25,7 @@ imports:
   - oauth2
   - oidc
 - name: github.com/coreos/go-semver
-  version: 568e959cd89871e61434c1143528d9162da89ef2
+  version: 8ab6407b697782a06568d4b7f1db25550ec2e4c6
   subpackages:
   - semver
 - name: github.com/coreos/pkg
@@ -49,7 +50,7 @@ imports:
   - log
   - swagger
 - name: github.com/ghodss/yaml
-  version: 73d445a93680fa1a78ae23a5839bad48f32ba1ee
+  version: 0ca9ea5df5451ffdf184b4428c902747c2c11cd7
 - name: github.com/go-openapi/jsonpointer
   version: 46af16f9f7b149af66e5d1bd010e3574dc06de98
 - name: github.com/go-openapi/jsonreference
@@ -59,14 +60,14 @@ imports:
 - name: github.com/go-openapi/swag
   version: 1d0bd113de87027671077d3c71eb3ac5d7dbba72
 - name: github.com/gogo/protobuf
-  version: 909568be09de550ed094403c2bf8a261b5bb730a
+  version: 100ba4e885062801d56799d78530b73b178a78f3
   subpackages:
   - proto
   - sortkeys
 - name: github.com/golang/glog
   version: 44145f04b68cf362d9c4df2182967c2275eaefed
 - name: github.com/golang/protobuf
-  version: 4bd1920723d7b7c925de087aa32e2187708897f7
+  version: 5a0f697c9ed9d68fef0116532c6e05cfeae00e55
   subpackages:
   - jsonpb
   - proto
@@ -89,7 +90,7 @@ imports:
   - jlexer
   - jwriter
 - name: github.com/onsi/ginkgo
-  version: 9eda700730cba42af70d53180f9dcce9266bc2bc
+  version: f40a49d81e5c12e90400620b6242fb29a8e7c9d9
   subpackages:
   - config
   - extensions/table
@@ -118,7 +119,7 @@ imports:
 - name: github.com/projectcalico/go-yaml-wrapper
   version: 598e54215bee41a19677faa4f0c32acd2a87eb56
 - name: github.com/projectcalico/libcalico-go
-  version: d5ff4aa493340f0239d9b9e557e11603b3f84532
+  version: da7b693f04138e96c3d3a4300cbd038b8eaac404
   subpackages:
   - lib/api
   - lib/api/unversioned
@@ -160,13 +161,13 @@ imports:
   subpackages:
   - codec
 - name: golang.org/x/crypto
-  version: 1351f936d976c60a0a48d728281922cf63eafb8d
+  version: 9419663f5a44be8b34ca85f08abc5fe1be11f8a3
   subpackages:
   - bcrypt
   - blowfish
   - ssh/terminal
 - name: golang.org/x/net
-  version: f2499483f923065a842d38eb4c7f1927e6fc6e6d
+  version: 66aacef3dd8a676686c7ae3716979581e8b03c47
   subpackages:
   - context
   - context/ctxhttp
@@ -185,9 +186,10 @@ imports:
   - jws
   - jwt
 - name: golang.org/x/sys
-  version: 20457ee8ea8546920d3f4e19e405da45250dc5a5
+  version: e48874b42435b4347fc52bdee0424a52abc974d7
   subpackages:
   - unix
+  - windows
 - name: golang.org/x/text
   version: 19e51611da83d6be54ddafce4a4af510cb3e9ea4
   subpackages:
@@ -234,7 +236,7 @@ imports:
   subpackages:
   - patricia
 - name: gopkg.in/yaml.v2
-  version: 53feefa2559fb8dfa8d81baad31be332c97d6c77
+  version: cd8b52f8269e0feb286dfeef29f8fe4d5b397e0b
 - name: k8s.io/apimachinery
   version: b317fa7ec8e0e7d1f77ac63bf8c3ec7b29a2a215
   subpackages:
